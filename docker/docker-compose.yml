@@ -1,0 +1,14 @@
+version: "3.3"
+services:
+  db:
+    image: mysql:5.7
+    restart: always
+    environment:
+      MYSQL_DATABASE: "spring_forum"
+      MYSQL_USER: "sf"
+      MYSQL_PASSWORD: "sf"
+      MYSQL_ROOT_PASSWORD: "password"
+    ports:
+      - "3306:3306"
+    expose:
+      - "3306"
