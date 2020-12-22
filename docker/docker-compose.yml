@@ -12,3 +12,8 @@ services:
       - "3306:3306"
     expose:
       - "3306"
+
+  spring-forum:
+    image: spring-forum
+    ports:
+      - 8080:8080
